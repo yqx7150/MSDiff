@@ -18,13 +18,13 @@ Physics in Medicine & Biology
 
 ## Reconstruction images with 30 views from AAPM Challenge Data.
 
-![fig3](src/3(2).png)
+![fig3](src/3.png) 
 
 (a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
 ## Reconstruction images with 30 views from CIRS Phantom Data.
 
-![fig4](src/4(2).png)
+![fig4](src/4.png)
 
 (a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
