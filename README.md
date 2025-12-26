@@ -9,18 +9,41 @@ Physics in Medicine & Biology
 
 ## The proposed model both global and local information. 
 
+![fig1](src/1.png)
 
 ## Pipeline of the ultra-sparse view reconstruction procedure in MSDiff.
 
+![fig2](src/2.png)
+
 
 ## Reconstruction images with 30 views from AAPM Challenge Data.
+
+![fig3](src/3(2).png)
 
 (a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
 ## Reconstruction images with 30 views from CIRS Phantom Data.
 
+![fig4](src/4(2).png)
+
 (a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
+
+## Training
+Full-view Diffusion Model (FDM)
+```bash
+python main_720.py --config=aapm_sin_ncsnpp_720.py --workdir=exp_fd --mode=train --eval_folder=result
+```
+
+Sparse-view Diffusion Model (SDM)
+```bash
+python main_120.py --config=aapm_sin_ncsnpp_120.py --workdir=exp_sd --mode=train --eval_folder=result
+```
+
+## Test
+```bash
+python PCsampling_demo.py
+```
 
      
 ### Other Related Projects
