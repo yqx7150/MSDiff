@@ -1,33 +1,36 @@
 # MSDiff
-**Paper**:Multi-Scale Diffusion Model for Ultra-Sparse View CT Reconstruction     
-**Authors**:Junyan Zhang, Mengxiao Geng, Pinhuang Tan, Yi Liu, Zhili Liu, Bin Huang, Qiegen Liu    
+**Paper**: Multi-Scale Diffusion Model for Ultra-Sparse View CT Reconstruction     
+**Authors**: Junyan Zhang, Mengxiao Geng, Pinhuang Tan, Yi Liu, Zhili Liu, Bin Huang, Qiegen Liu    
 Physics in Medicine & Biology
 
 
 **Abstract**: Computed Tomography (CT) technology reduces radiation exposure to the human body through sparse sampling, but fewer sampling angles pose challenges for image reconstruction. When the projection angles are significantly reduced, the quality of image reconstruc-tion deteriorates. To improve the quality of image reconstruction under sparse angles, an ultra-sparse view CT reconstruction method utilizing multi-scale diffusion models is proposed. This method aims to focus on the global distribution of information while facilitating the reconstruction of local image features in sparse views. Specifically, the proposed model ingeniously combines information from both comprehensive sampling and selective sparse sampling techniques. By precisely adjusting the diffusion model, diverse noise distribu-tions are extracted, enhancing the understanding of the overall image structure and assisting the fully sampled model in recovering image information more effectively. By leveraging the inherent correlations within the projection data, an equidistant mask is designed according to the principles of CT imaging, allowing the model to focus attention more efficiently. Experimental results demonstrate that the multi-scale model approach significantly improves image reconstruction quality under ultra-sparse views and exhibits good gener-alization across multiple datasets.
+
 **Index Terms**—Computed tomography, multi-diffusion model, ultra-sparse view reconstruction, sinogram domain.
 
-## The proposed model both global and local information. 
+## Linear measurement process for sparse-view CT 
 
-![fig1](src/1.png)
+![fig1](src/L.png)
 
-## Pipeline of the ultra-sparse view reconstruction procedure in MSDiff.
+## Visualization of the diffusion process of MSDiff in the projection domain
 
-![fig2](src/2.png)
+![fig2](src/V.png) 
 
+## Pipeline of the ultra-sparse view reconstruction procedure in MSDiff
 
-## Reconstruction images with 30 views from AAPM Challenge Data.
+![fig3](src/2.png)
 
-![fig3](src/3.png) 
+## Reconstruction images with 30 views from CIRS Phantom Data
 
-(a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
-
-## Reconstruction images with 30 views from CIRS Phantom Data.
-
-![fig4](src/4.png)
+![fig5](src/4.png)
 
 (a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
+## Reconstruction images with 50 views from Preclinical Mouse Data
+
+![fig6](src/R.png)
+
+(a) The reference image, (b) FBP, (c) U-Net, (d) FBPConvNet, (e) GMSD, (f) MSDiff. 
 
 ## Training
 Full-view Diffusion Model (FDM)
