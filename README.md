@@ -1,9 +1,7 @@
 # MSDiff: Multi-Scale Diffusion Model for Ultra-Sparse View CT Reconstruction
-
 **Paper**: Multi-Scale Diffusion Model for Ultra-Sparse View CT Reconstruction     
-
-**Authors**: Junyan Zhang, Mengxiao Geng, Pinhuang Tan, Yi Liu, Zhili Liu, Bin Huang, Qiegen Liu    
-
+**Authors**: Junyan Zhang, Mengxiao Geng, Pinhuang Tan, Yi Liu, Zhili Liu, Bin Huang, Qiegen Liu  
+https://iopscience.iop.org/article/10.1088/1361-6560/ae2fa7/meta     
 Physics and Engineering in Medicine.
 
 
